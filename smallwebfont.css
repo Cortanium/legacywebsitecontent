@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'smallwebfont';
+  src: url('./fonts/smallwebfont.eot?42364238');
+  src: url('./fonts/smallwebfont.eot?42364238#iefix') format('embedded-opentype'),
+       url('./fonts/smallwebfont.woff2?42364238') format('woff2'),
+       url('./fonts/smallwebfont.woff?42364238') format('woff'),
+       url('./fonts/smallwebfont.ttf?42364238') format('truetype'),
+       url('./fonts/smallwebfont.svg?42364238#smallwebfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'smallwebfont';
+    src: url('../font/smallwebfont.svg?42364238#smallwebfont') format('svg');
+  }
+}
+*/
+ 
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 smallwebfont;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+ 
+.fa-twitter:before { content: '\f099'; } /* '' */
+.fa-youtube:before { content: '\f167'; } /* '' */
+.fa-instagram:before { content: '\f16d'; } /* '' */
+.fa-twitch:before { content: '\f1e8'; } /* '' */
+.fa-discord-alt:before { content: '\f2ef'; } /* '' */

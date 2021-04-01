@@ -1,0 +1,214 @@
+/*For compatibility purposes. Lotta comic sans.*/
+@font-face {
+  font-family: "Comic Sans MS";
+  src: url("./fonts/comicsans.eot");
+  src: url("./fonts/comicsans.eot?#iefix") format("embedded-opentype"), 
+       url("./fonts/comicsans.woff2") format("woff2"), 
+       url("./fonts/comicsans.woff") format("woff"), 
+       url("./fonts/comicsans.ttf") format("truetype"),
+       url("./fonts/comicsans.svg#Comic Sans MS") format("svg");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Comic Sans MS Bold";
+  src: url("./fonts/boldcomic.ttf");
+  font-display: swap;
+}
+
+h2 {
+  font-weight: 900;
+  left: 0;
+  line-height: 200px;
+  margin-top: -100px;
+  position: relative;
+  text-align: center;
+  top: 40%;
+  width: 75%;
+  font-family: "Comic Sans MS Bold";
+  font-family: "Comic Sans MS", "Comic Sans";
+  font-size: 650%;
+}
+
+p {
+  left: 0;
+  line-height: 200px;
+  margin-top: -100px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 77%;
+  font-family: "Comic Sans MS";
+  font-size: 170%;
+}
+
+.no-webp body {
+  background-image: url("./images/bc.png");
+}
+
+.webp body {
+  background-image: url("./images/bc.webp");
+}
+
+/* Background Modifiers */
+body {
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/*Responsive Page Modifiers */
+
+@media only screen and (max-width: 480px) .content {
+  padding: 0 3%;
+}
+@media only screen and (max-width: 1024px) .content {
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40%;
+
+  text-align: center;
+}
+.content {
+  position: absolute;
+  left: 0;
+  padding: 0;
+  top: 50vh;
+  width: 75%;
+  padding: 0 5%;
+  transform: translateY(-50%);
+  text-align: center;
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  /*position: absolute;*/
+}
+
+@media only screen and (max-width: 1379px) {
+  .no-webp body {
+      background-image: url("./images/bcMOBILEE.png");
+  }
+
+  .webp body {
+      background-image: url("./images/bcMOBILEE.webp");
+  }
+
+  body {
+      /* The file size of this background image is 93% smaller
+         to improve page load speed on mobile internet connections */
+
+      /*  background-image: url('bcMOBILEE.webp'); */
+      /*position:absolute;*/
+  }
+  h2 {
+      font-size: 5.5rem;
+  }
+  .content {
+      width: 100%;
+      left: 8%;
+      position: fixed;
+      background: transparent;
+      width: 100vw;
+      height: 100vh;
+      margin: 0 auto;
+      text-align: center;
+  }
+}
+
+/* Social Media Button Modifiers */
+
+.fa {
+  padding: 20px;
+  font-size: 3vh;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  position: relative;
+  left: -13%;
+  margin-top: 40vh;
+  font-display: swap;
+}
+
+/* Have to include the Media Query after the FA definition. */
+
+@media only screen and (max-width: 884px) {
+  h2 {
+      font-size: 12vw;
+  }
+
+  .no-webp body {
+      background-image: url("./images/bcMOBILEsmol.png");
+  }
+
+  .webp body {
+      background-image: url("./images/bcMOBILEsmol.webp");
+  }
+
+  body {
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+
+  .content {
+      top: 30%;
+      font-size: 2.5vw;
+  }
+
+  .fa {
+      width: 25px;
+      top: 40%;
+      padding: 3vw;
+      border-radius: 75%;
+      font-display: swap;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .content {
+      top: 25%;
+  }
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #f40083;
+  color: white;
+}
+
+.fa-discord-alt {
+  background: #5c6eaf;
+  color: white;
+}
+
+.fa-twitch {
+  background: #6441a5;
+  color: white;
+}
+
+html {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
